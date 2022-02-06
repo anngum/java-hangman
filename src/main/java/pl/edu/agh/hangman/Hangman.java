@@ -62,19 +62,23 @@ public class Hangman {
     };
     public static List<String> words= new ArrayList<>();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         //readFile("slowa.txt");
+
+
+
+        System.out.println(drawWord("TEST", "----",'E'));
 
 
     }
 
 
     public static String drawWord(String word, String userWord, char x) {
+
         for (int i=0;i<word.length(); i++){
-            if(word[i]==x) userWord[i]=x;
-            else {
-                userWord[i]='-';
-            }
+
+            if(word.charAt(i) == x)  userWord.replace('-',x);
+            
         }
         return userWord;
 

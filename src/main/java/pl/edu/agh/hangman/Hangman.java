@@ -59,11 +59,8 @@ public class Hangman {
                     "========"
     };
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
-        ReadFile rf = new ReadFile();
-
-        rf.fileReader("src/main/resources/slowa.txt");
 
     }
 

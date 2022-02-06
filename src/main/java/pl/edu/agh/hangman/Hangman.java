@@ -67,7 +67,7 @@ public class Hangman {
 
 
 
-        System.out.println(drawWord("TEST", "----",'E'));
+        System.out.println(drawWord("TEST", "----",'T'));
 
 
     }
@@ -78,7 +78,7 @@ public class Hangman {
         for (int i=0;i<word.length(); i++){
 
             if(word.charAt(i) == x)  userWord.replace('-',x);
-            
+
         }
         return userWord;
 
